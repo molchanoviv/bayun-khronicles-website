@@ -1,0 +1,25 @@
+.sidenav-container
+{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.sidenav
+{
+    width: 300px;
+}
+
+.mat-toolbar.mat-primary
+{
+    position: sticky;
+    top: 0;
+}
+
+.title {
+    text-decoration: none;
+    color: white;
+}
