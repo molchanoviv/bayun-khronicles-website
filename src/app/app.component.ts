@@ -9,7 +9,8 @@ import { filter, map, mergeMap } from 'rxjs/operators';
     styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-    private baseTitle = 'Bayun Khronicles - ';
+
+    private baseTitle = 'Хроники Баюна - ';
 
     constructor(
         private titleService: Title,
@@ -30,7 +31,8 @@ export class AppComponent implements OnInit {
                     return route;
                 }),
                 filter(route => route.outlet === 'primary'),
-                mergeMap(route => route.data)
+                mergeMap(route => route.data),
+                filter(event => event['title'] !== '')
             )
             .subscribe((event) => {
                 this.titleService.setTitle(this.baseTitle + event['title']);

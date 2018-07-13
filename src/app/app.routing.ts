@@ -4,10 +4,10 @@ import { DashboardComponent } from 'app/components/pages/dashboard/dashboard.com
 import { GameComponent } from 'app/components/pages/game/game.component';
 
 const appRoutes: Routes = [
-    { path: '', component: DashboardComponent, data: { title: '' }  },
+    { path: '', component: DashboardComponent, data: { title: 'Выбор раздела' }  },
 
-    { path: 'comics', component: ComicsComponent, data: { title: 'Comics' } },
-    { path: 'game', component: GameComponent, data: { title: 'Game' } },
+    { path: 'comics', component: ComicsComponent, data: { title: 'Комикс' } },
+    { path: 'game', component: GameComponent, data: { title: 'Игра' } },
 
     { path: '**', redirectTo: '' }
 ];

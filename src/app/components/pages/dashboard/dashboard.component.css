@@ -1,0 +1,97 @@
+#wrapper
+{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 64px);
+    overflow: hidden;
+    z-index: 100;
+}
+
+.layer
+{
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+}
+
+.layer .content-wrap
+{
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+}
+
+.layer .content-body
+{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.bottom
+{
+    z-index: 101;
+}
+
+.bottom .content-body
+{
+    right: 0;
+}
+
+.top
+{
+    z-index: 102;
+    width: 50vw;
+}
+
+.top .content-body
+{
+    left: 0;
+}
+
+.skewed .top
+{
+    transform: skew(-10deg);
+    margin-left: -1000px;
+    width: calc(50vw + 1000px);
+}
+
+.skewed .top .content-wrap
+{
+    transform: skew(10deg);
+    margin-left: 1000px;
+}
+
+.content-body
+{
+    height: 100%;
+    color: white;
+    font-size: 51pt;
+    font-family: Roboto, serif;
+}
+
+.left-content-wrap
+{
+    background: url("/assets/images/left-cat.jpg") 0 0;
+}
+
+.right-content-wrap
+{
+    background: url("/assets/images/right-cat.jpg") 0 0;
+}
+
+.content-table
+{
+    display: inline-table;
+    height: 100%;
+    overflow: hidden;
+}
+
+.content-cell
+{
+    display: table-cell;
+    vertical-align: middle;
+}
