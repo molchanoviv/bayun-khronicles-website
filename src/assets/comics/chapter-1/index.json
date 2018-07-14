@@ -1,0 +1,186 @@
+{
+    "number": 1,
+    "title": "Долгожданная встреча",
+    "pages": [
+        {
+            "image": {
+                "file": "/images/0.jpg"
+            },
+            "sound": {
+                "file": null,
+                "volume": 100,
+                "delay": 0,
+                "useFadeIn": false,
+                "useFadeOut": false
+            }
+        },
+        {
+            "image": {
+                "file": "/images/1.jpg"
+            },
+            "sound": {
+                "file": null,
+                "volume": 100,
+                "delay": 0,
+                "useFadeIn": false,
+                "useFadeOut": false
+            }
+        },
+        {
+            "image": {
+                "file": "/images/2.jpg"
+            },
+            "sound": {
+                "file": null,
+                "volume": 100,
+                "delay": 0,
+                "useFadeIn": false,
+                "useFadeOut": false
+            }
+        },
+        {
+            "image": {
+                "file": "/images/3.jpg"
+            },
+            "sound": {
+                "file": null,
+                "volume": 100,
+                "delay": 0,
+                "useFadeIn": false,
+                "useFadeOut": false
+            }
+        },
+        {
+            "image": {
+                "file": "/images/4.jpg"
+            },
+            "sound": {
+                "file": null,
+                "volume": 100,
+                "delay": 0,
+                "useFadeIn": false,
+                "useFadeOut": false
+            }
+        },
+        {
+            "image": {
+                "file": "/images/5.jpg"
+            },
+            "sound": {
+                "file": null,
+                "volume": 100,
+                "delay": 0,
+                "useFadeIn": false,
+                "useFadeOut": false
+            }
+        },
+        {
+            "image": {
+                "file": "/images/6.jpg"
+            },
+            "sound": {
+                "file": null,
+                "volume": 100,
+                "delay": 0,
+                "useFadeIn": false,
+                "useFadeOut": false
+            }
+        },
+        {
+            "image": {
+                "file": "/images/7.jpg"
+            },
+            "sound": {
+                "file": null,
+                "volume": 100,
+                "delay": 0,
+                "useFadeIn": false,
+                "useFadeOut": false
+            }
+        },
+        {
+            "image": {
+                "file": "/images/8.jpg"
+            },
+            "sound": {
+                "file": null,
+                "volume": 100,
+                "delay": 0,
+                "useFadeIn": false,
+                "useFadeOut": false
+            }
+        },
+        {
+            "image": {
+                "file": "/images/9.jpg"
+            },
+            "sound": {
+                "file": null,
+                "volume": 100,
+                "delay": 0,
+                "useFadeIn": false,
+                "useFadeOut": false
+            }
+        },
+        {
+            "image": {
+                "file": "/images/10.jpg"
+            },
+            "sound": {
+                "file": null,
+                "volume": 100,
+                "delay": 0,
+                "useFadeIn": false,
+                "useFadeOut": false
+            }
+        },
+        {
+            "image": {
+                "file": "/images/11.jpg"
+            },
+            "sound": {
+                "file": null,
+                "volume": 100,
+                "delay": 0,
+                "useFadeIn": false,
+                "useFadeOut": false
+            }
+        },
+        {
+            "image": {
+                "file": "/images/12.jpg"
+            },
+            "sound": {
+                "file": null,
+                "volume": 100,
+                "delay": 0,
+                "useFadeIn": false,
+                "useFadeOut": false
+            }
+        },
+        {
+            "image": {
+                "file": "/images/13.jpg"
+            },
+            "sound": {
+                "file": null,
+                "volume": 100,
+                "delay": 0,
+                "useFadeIn": false,
+                "useFadeOut": false
+            }
+        },
+        {
+            "image": {
+                "file": "/images/14.jpg"
+            },
+            "sound": {
+                "file": null,
+                "volume": 100,
+                "delay": 0,
+                "useFadeIn": false,
+                "useFadeOut": false
+            }
+        }
+    ]
+}

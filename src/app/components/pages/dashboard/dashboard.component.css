@@ -33,6 +33,7 @@
 
 .bottom
 {
+    background-color: #f6f68f;
     z-index: 101;
 }
 
@@ -43,6 +44,7 @@
 
 .top
 {
+    background-color: #a6ddff;
     z-index: 102;
     width: 50vw;
 }
@@ -63,6 +65,17 @@
 {
     transform: skew(10deg);
     margin-left: 1000px;
+    background-color: #00000022;
+}
+
+.skewed .bottom .content-wrap
+{
+    background-color: #00000022;
+}
+
+.skewed .top .content-wrap:hover,
+.skewed .bottom .content-wrap:hover{
+    background-color: #00000000;
 }
 
 .content-body
@@ -75,12 +88,12 @@
 
 .left-content-wrap
 {
-    background: url("/assets/images/left-cat.jpg") 0 0;
+    background: url("/assets/images/game.png") no-repeat 200px 200px;
 }
 
 .right-content-wrap
 {
-    background: url("/assets/images/right-cat.jpg") 0 0;
+    background: url("/assets/images/comics.png") no-repeat 900px 200px;
 }
 
 .content-table

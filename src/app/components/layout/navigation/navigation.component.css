@@ -23,3 +23,11 @@
     text-decoration: none;
     color: white;
 }
+
+.basic-container {
+    padding: 30px;
+}
+
+mat-toolbar {
+    z-index: 9999;
+}

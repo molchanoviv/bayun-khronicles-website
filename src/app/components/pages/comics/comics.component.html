@@ -1,3 +1,46 @@
-<p>
-  comics works!
-</p>
+<mat-grid-list cols="12" rowHeight="100px">
+    <mat-grid-tile [colspan]="4" [rowspan]="1">
+        <mat-form-field>
+            <mat-select placeholder="Глава">
+                <mat-option *ngFor="let chapter of chapters" [value]="chapter.number">
+                    {{ chapter.number }} - {{ chapter.title }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+        <button mat-raised-button matTooltip="Предыдущая страница">
+            <mat-icon aria-label="Предыдущая страница">arrow_back</mat-icon>
+        </button>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="2" [rowspan]="1">
+        <mat-form-field>
+            <mat-select placeholder="Страница">
+                <!--<mat-option *ngFor="let food of []" [value]="food.file">-->
+                <!--{{food.index}}-->
+                <!--</mat-option>-->
+            </mat-select>
+        </mat-form-field>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+        <button mat-raised-button matTooltip="Следующая страница">
+            <mat-icon aria-label="Следующая страница">arrow_forward</mat-icon>
+        </button>
+    </mat-grid-tile>
+</mat-grid-list>
+
+<mat-card class="example-card">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Shiba Inu</mat-card-title>
+        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+        <p>
+            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+            bred for hunting.
+        </p>
+    </mat-card-content>
+</mat-card>
