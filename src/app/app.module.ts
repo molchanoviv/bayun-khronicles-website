@@ -52,6 +52,7 @@ import { GameComponent } from 'app/components/pages/game/game.component';
 import { DataUrlInterceptor } from 'app/interceptors/data-url.interceptor';
 import { ComicsLoaderService, loadComics } from 'app/services/comics-loader.service';
 import 'jquery';
+import { DisqusModule } from 'ngx-disqus';
 
 @NgModule({
     declarations: [
@@ -66,6 +67,7 @@ import 'jquery';
         BrowserAnimationsModule,
         FormsModule,
         HttpClientModule,
+        DisqusModule.forRoot('bayun-khronicles'),
         LayoutModule,
         CdkTableModule,
         CdkTreeModule,

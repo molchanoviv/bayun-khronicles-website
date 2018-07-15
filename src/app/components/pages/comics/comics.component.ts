@@ -34,7 +34,7 @@ export class ComicsComponent implements OnInit {
 
     constructor(
         private route: ActivatedRoute,
-        private router: Router,
+        public router: Router,
         private location: Location,
         private dataStorage: DataStorageService
     ) {}
