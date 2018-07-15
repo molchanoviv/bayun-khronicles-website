@@ -56,7 +56,9 @@ export class ComicsComponent implements OnInit, OnDestroy {
         this.playSounds();
     }
 
-    public ngOnDestroy(): void {}
+    public ngOnDestroy(): void {
+        this.audioPlayer.stopAll();
+    }
 
     public get chapters(): Collection<Chapter> {
         return this.dataStorage.chapters.sortBy('number');
