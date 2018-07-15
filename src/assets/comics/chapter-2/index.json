@@ -1,5 +1,23 @@
 {
     "number": 2,
     "title": "Вторая глава",
-    "pages": []
+    "pages": [
+        {
+            "number": 1,
+            "image": {
+                "file": "/assets/comics/chapter-1/images/0.jpg"
+            },
+            "sounds": [
+                {
+                    "file": null,
+                    "volume": 100,
+                    "delay": 0,
+                    "duration": 0,
+                    "repeat": false,
+                    "useFadeIn": false,
+                    "useFadeOut": false
+                }
+            ]
+        }
+    ]
 }

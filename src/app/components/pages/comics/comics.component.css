@@ -1,0 +1,23 @@
+.navigation-container,
+#card-container
+{
+    align-content: center;
+    text-align: center;
+}
+
+#imageCard
+{
+    display: inline-block;
+    min-width: 1100px;
+}
+
+mat-grid-list
+{
+    display: inline-block;
+    min-width: 1150px;
+}
+
+.mat-card-image
+{
+    width: auto;
+}

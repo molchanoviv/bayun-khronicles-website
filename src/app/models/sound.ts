@@ -14,6 +14,12 @@ export class Sound {
     @JsonProperty('delay', Number)
     public delay: number = 0;
 
+    @JsonProperty('duration', Number)
+    public duration: number = 0;
+
+    @JsonProperty('repeat', Boolean)
+    public repeat: boolean = false;
+
     @JsonProperty('useFadeIn', Boolean)
     public useFadeIn: boolean = false;
 

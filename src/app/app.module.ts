@@ -3,6 +3,7 @@ import { CdkTableModule } from '@angular/cdk/table';
 import { CdkTreeModule } from '@angular/cdk/tree';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { APP_INITIALIZER, NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import {
     MatAutocompleteModule,
     MatBadgeModule,
@@ -49,8 +50,8 @@ import { ComicsComponent } from 'app/components/pages/comics/comics.component';
 import { DashboardComponent } from 'app/components/pages/dashboard/dashboard.component';
 import { GameComponent } from 'app/components/pages/game/game.component';
 import { DataUrlInterceptor } from 'app/interceptors/data-url.interceptor';
-import 'jquery';
 import { ComicsLoaderService, loadComics } from 'app/services/comics-loader.service';
+import 'jquery';
 
 @NgModule({
     declarations: [
@@ -63,6 +64,7 @@ import { ComicsLoaderService, loadComics } from 'app/services/comics-loader.serv
     imports: [
         BrowserModule,
         BrowserAnimationsModule,
+        FormsModule,
         HttpClientModule,
         LayoutModule,
         CdkTableModule,

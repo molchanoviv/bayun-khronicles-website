@@ -6,7 +6,7 @@ import { GameComponent } from 'app/components/pages/game/game.component';
 const appRoutes: Routes = [
     { path: '', component: DashboardComponent, data: { title: 'Выбор раздела' }  },
 
-    { path: 'comics', component: ComicsComponent, data: { title: 'Комикс' } },
+    { path: 'comics/:chapter/page/:page', component: ComicsComponent, data: { title: 'Комикс' } },
     { path: 'game', component: GameComponent, data: { title: 'Игра' } },
 
     { path: '**', redirectTo: '' }
