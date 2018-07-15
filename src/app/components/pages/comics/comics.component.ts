@@ -1,13 +1,15 @@
 import { Location } from '@angular/common';
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
 import { MAT_TOOLTIP_DEFAULT_OPTIONS, MatTooltipDefaultOptions } from '@angular/material';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { AutoUnsubscribe } from 'app/annotations/auto-unsubscribe.annotation';
 import { Chapter } from 'app/models/chapter';
 import { Page } from 'app/models/page';
+import { AudioPlayerService } from 'app/services/audio-player.service';
 import { DataStorageService } from 'app/services/data-storage.service';
 import { Collection, default as collect } from 'collect.js';
 import { Subscription } from 'rxjs';
+import { filter } from 'rxjs/operators';
 
 export const myCustomTooltipDefaults: MatTooltipDefaultOptions = {
     showDelay: 500,
@@ -24,7 +26,7 @@ export const myCustomTooltipDefaults: MatTooltipDefaultOptions = {
         {provide: MAT_TOOLTIP_DEFAULT_OPTIONS, useValue: myCustomTooltipDefaults}
     ]
 })
-export class ComicsComponent implements OnInit {
+export class ComicsComponent implements OnInit, OnDestroy {
 
     public currentChapterNumber: number;
 
@@ -36,7 +38,8 @@ export class ComicsComponent implements OnInit {
         private route: ActivatedRoute,
         public router: Router,
         private location: Location,
-        private dataStorage: DataStorageService
+        private dataStorage: DataStorageService,
+        private audioPlayer: AudioPlayerService
     ) {}
 
     public ngOnInit(): void {
@@ -46,7 +49,14 @@ export class ComicsComponent implements OnInit {
                 this.currentPageNumber = parseInt(params['page'], 10);
             })
         );
+        this.subscriptions.push(this.router.events
+            .pipe(filter(event => event instanceof NavigationEnd))
+            .subscribe(_ => this.playSounds())
+        );
+        this.playSounds();
     }
+
+    public ngOnDestroy(): void {}
 
     public get chapters(): Collection<Chapter> {
         return this.dataStorage.chapters.sortBy('number');
@@ -134,14 +144,23 @@ export class ComicsComponent implements OnInit {
     public handleKeyboardEvent(event: KeyboardEvent): void {
         if (event.key === 'Backspace' || event.key === 'ArrowLeft') {
             this.goBackward();
+            event.preventDefault();
         }
         if (event.key === 'Enter' || event.key === ' ' || event.key === 'ArrowRight') {
             this.goForward();
+            event.preventDefault();
         }
-        event.preventDefault();
     }
 
     private navigateToPage(chapterNumber: number, pageNumber: number): void {
-        this.router.navigate(['comics', chapterNumber, 'page', pageNumber]).then().catch();
+        this.router.navigate(['comics', chapterNumber, 'page', pageNumber]);
+    }
+
+    private playSounds(): void {
+        this.audioPlayer.stopAll();
+        if (this.currentPage === null) {
+            return;
+        }
+        this.currentPage.sounds.each(sound => this.audioPlayer.play(sound));
     }
 }

@@ -25,4 +25,6 @@ export class Sound {
 
     @JsonProperty('useFadeOut', Boolean)
     public useFadeOut: boolean = false;
+
+    public audio: HTMLAudioElement;
 }

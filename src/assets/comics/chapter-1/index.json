@@ -9,13 +9,22 @@
             },
             "sounds": [
                 {
-                    "file": null,
-                    "volume": 100,
+                    "file": "/assets/comics/chapter-1/sounds/blizzard.mp3",
+                    "volume": 5,
                     "delay": 0,
                     "duration": 0,
-                    "repeat": false,
+                    "repeat": true,
                     "useFadeIn": false,
-                    "useFadeOut": false
+                    "useFadeOut": true
+                },
+                {
+                    "file": "/assets/comics/chapter-1/sounds/snow-steps.mp3",
+                    "volume": 80,
+                    "delay": 1,
+                    "duration": 0,
+                    "repeat": true,
+                    "useFadeIn": false,
+                    "useFadeOut": true
                 }
             ]
         },
@@ -26,13 +35,31 @@
             },
             "sounds": [
                 {
-                    "file": null,
-                    "volume": 100,
+                    "file": "/assets/comics/chapter-1/sounds/blizzard.mp3",
+                    "volume": 5,
                     "delay": 0,
+                    "duration": 4,
+                    "repeat": false,
+                    "useFadeIn": false,
+                    "useFadeOut": true
+                },
+                {
+                    "file": "/assets/comics/chapter-1/sounds/fire.mp3",
+                    "volume": 15,
+                    "delay": 5,
+                    "duration": 0,
+                    "repeat": true,
+                    "useFadeIn": true,
+                    "useFadeOut": false
+                },
+                {
+                    "file": "/assets/comics/chapter-1/sounds/door.mp3",
+                    "volume": 50,
+                    "delay": 3,
                     "duration": 0,
                     "repeat": false,
                     "useFadeIn": false,
-                    "useFadeOut": false
+                    "useFadeOut": true
                 }
             ]
         },
@@ -43,11 +70,11 @@
             },
             "sounds": [
                 {
-                    "file": null,
-                    "volume": 100,
+                    "file": "/assets/comics/chapter-1/sounds/fire.mp3",
+                    "volume": 15,
                     "delay": 0,
                     "duration": 0,
-                    "repeat": false,
+                    "repeat": true,
                     "useFadeIn": false,
                     "useFadeOut": false
                 }
@@ -60,9 +87,18 @@
             },
             "sounds": [
                 {
-                    "file": null,
-                    "volume": 100,
+                    "file": "/assets/comics/chapter-1/sounds/fire.mp3",
+                    "volume": 15,
                     "delay": 0,
+                    "duration": 0,
+                    "repeat": true,
+                    "useFadeIn": false,
+                    "useFadeOut": false
+                },
+                {
+                    "file": "/assets/comics/chapter-1/sounds/pour-beer.mp3",
+                    "volume": 30,
+                    "delay": 3,
                     "duration": 0,
                     "repeat": false,
                     "useFadeIn": false,
@@ -77,10 +113,19 @@
             },
             "sounds": [
                 {
-                    "file": null,
-                    "volume": 100,
+                    "file": "/assets/comics/chapter-1/sounds/fire.mp3",
+                    "volume": 15,
                     "delay": 0,
                     "duration": 0,
+                    "repeat": true,
+                    "useFadeIn": false,
+                    "useFadeOut": false
+                },
+                {
+                    "file": "/assets/comics/chapter-1/sounds/cough.mp3",
+                    "volume": 30,
+                    "delay": 2,
+                    "duration": 4,
                     "repeat": false,
                     "useFadeIn": false,
                     "useFadeOut": false
@@ -94,13 +139,22 @@
             },
             "sounds": [
                 {
-                    "file": null,
-                    "volume": 100,
+                    "file": "/assets/comics/chapter-1/sounds/birds.mp3",
+                    "volume": 30,
                     "delay": 0,
+                    "duration": 5,
+                    "repeat": true,
+                    "useFadeIn": true,
+                    "useFadeOut": false
+                },
+                {
+                    "file": "/assets/comics/chapter-1/sounds/door.mp3",
+                    "volume": 50,
+                    "delay": 3,
                     "duration": 0,
                     "repeat": false,
                     "useFadeIn": false,
-                    "useFadeOut": false
+                    "useFadeOut": true
                 }
             ]
         },
@@ -111,9 +165,9 @@
             },
             "sounds": [
                 {
-                    "file": null,
-                    "volume": 100,
-                    "delay": 0,
+                    "file": "/assets/comics/chapter-1/sounds/clap.mp3",
+                    "volume": 50,
+                    "delay": 1,
                     "duration": 0,
                     "repeat": false,
                     "useFadeIn": false,
@@ -128,9 +182,27 @@
             },
             "sounds": [
                 {
-                    "file": null,
-                    "volume": 100,
-                    "delay": 0,
+                    "file": "/assets/comics/chapter-1/sounds/clew.mp3",
+                    "volume": 50,
+                    "delay": 2,
+                    "duration": 3,
+                    "repeat": true,
+                    "useFadeIn": false,
+                    "useFadeOut": false
+                },
+                {
+                    "file": "/assets/comics/chapter-1/sounds/open-chest.mp3",
+                    "volume": 50,
+                    "delay": 5,
+                    "duration": 3,
+                    "repeat": false,
+                    "useFadeIn": false,
+                    "useFadeOut": false
+                },
+                {
+                    "file": "/assets/comics/chapter-1/sounds/close-chest.mp3",
+                    "volume": 50,
+                    "delay": 8,
                     "duration": 0,
                     "repeat": false,
                     "useFadeIn": false,
@@ -145,10 +217,10 @@
             },
             "sounds": [
                 {
-                    "file": null,
-                    "volume": 100,
-                    "delay": 0,
-                    "duration": 0,
+                    "file": "/assets/comics/chapter-1/sounds/plate-drop.mp3",
+                    "volume": 50,
+                    "delay": 1.5,
+                    "duration": 3,
                     "repeat": false,
                     "useFadeIn": false,
                     "useFadeOut": false
@@ -160,17 +232,7 @@
             "image": {
                 "file": "/assets/comics/chapter-1/images/9.jpg"
             },
-            "sounds": [
-                {
-                    "file": null,
-                    "volume": 100,
-                    "delay": 0,
-                    "duration": 0,
-                    "repeat": false,
-                    "useFadeIn": false,
-                    "useFadeOut": false
-                }
-            ]
+            "sounds": []
         },
         {
             "number": 11,
@@ -179,10 +241,10 @@
             },
             "sounds": [
                 {
-                    "file": null,
-                    "volume": 100,
-                    "delay": 0,
-                    "duration": 0,
+                    "file": "/assets/comics/chapter-1/sounds/fall.mp3",
+                    "volume": 50,
+                    "delay": 1,
+                    "duration": 2,
                     "repeat": false,
                     "useFadeIn": false,
                     "useFadeOut": false
@@ -194,17 +256,7 @@
             "image": {
                 "file": "/assets/comics/chapter-1/images/11.jpg"
             },
-            "sounds": [
-                {
-                    "file": null,
-                    "volume": 100,
-                    "delay": 0,
-                    "duration": 0,
-                    "repeat": false,
-                    "useFadeIn": false,
-                    "useFadeOut": false
-                }
-            ]
+            "sounds": []
         },
         {
             "number": 13,
@@ -213,10 +265,10 @@
             },
             "sounds": [
                 {
-                    "file": null,
+                    "file": "/assets/comics/chapter-1/sounds/house-fall.mp3",
                     "volume": 100,
-                    "delay": 0,
-                    "duration": 0,
+                    "delay": 3,
+                    "duration": 4,
                     "repeat": false,
                     "useFadeIn": false,
                     "useFadeOut": false
@@ -230,9 +282,9 @@
             },
             "sounds": [
                 {
-                    "file": null,
-                    "volume": 100,
-                    "delay": 0,
+                    "file": "/assets/comics/chapter-1/sounds/fail.mp3",
+                    "volume": 50,
+                    "delay": 2,
                     "duration": 0,
                     "repeat": false,
                     "useFadeIn": false,
@@ -247,11 +299,11 @@
             },
             "sounds": [
                 {
-                    "file": null,
-                    "volume": 100,
+                    "file": "/assets/comics/chapter-1/sounds/fire.mp3",
+                    "volume": 15,
                     "delay": 0,
                     "duration": 0,
-                    "repeat": false,
+                    "repeat": true,
                     "useFadeIn": false,
                     "useFadeOut": false
                 }

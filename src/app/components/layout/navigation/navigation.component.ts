@@ -20,7 +20,6 @@ export class NavigationComponent implements OnInit {
     constructor(private router: Router, @Inject(DOCUMENT) private document) {}
 
     public ngOnInit(): void {
-
         this.subscriptions.push(this.router.events
             .pipe(
                 filter(event => event instanceof NavigationEnd)
