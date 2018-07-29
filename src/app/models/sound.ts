@@ -20,11 +20,5 @@ export class Sound {
     @JsonProperty('repeat', Boolean)
     public repeat: boolean = false;
 
-    @JsonProperty('useFadeIn', Boolean)
-    public useFadeIn: boolean = false;
-
-    @JsonProperty('useFadeOut', Boolean)
-    public useFadeOut: boolean = false;
-
     public audio: HTMLAudioElement;
 }
