@@ -41,7 +41,7 @@
             <div mat-card-avatar class="example-header-image"></div>
             <mat-card-title>{{ currentChapter.title }}</mat-card-title>
         </mat-card-header>
-        <img mat-card-image [src]="currentPage.image.file" [alt]="currentPage.number">
+        <img mat-card-image [src]="currentPage.image.file" [alt]="currentPage.number" (click)="goForward()">
         <mat-card-content>
             <!--content-->
         </mat-card-content>

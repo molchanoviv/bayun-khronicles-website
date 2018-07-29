@@ -167,7 +167,7 @@
                 {
                     "file": "/assets/comics/chapter-1/sounds/clap.mp3",
                     "volume": 50,
-                    "delay": 1,
+                    "delay": 2,
                     "duration": 0,
                     "repeat": false,
                     "useFadeIn": false,
@@ -232,7 +232,17 @@
             "image": {
                 "file": "/assets/comics/chapter-1/images/9.jpg"
             },
-            "sounds": []
+            "sounds": [
+                {
+                    "file": "/assets/comics/chapter-1/sounds/falling.mp3",
+                    "volume": 50,
+                    "delay": 1,
+                    "duration": 2,
+                    "repeat": false,
+                    "useFadeIn": false,
+                    "useFadeOut": false
+                }
+            ]
         },
         {
             "number": 11,
@@ -248,6 +258,15 @@
                     "repeat": false,
                     "useFadeIn": false,
                     "useFadeOut": false
+                },
+                {
+                    "file": "/assets/comics/chapter-1/sounds/birds.mp3",
+                    "volume": 50,
+                    "delay": 0,
+                    "duration": 0,
+                    "repeat": true,
+                    "useFadeIn": false,
+                    "useFadeOut": false
                 }
             ]
         },
@@ -256,7 +275,17 @@
             "image": {
                 "file": "/assets/comics/chapter-1/images/11.jpg"
             },
-            "sounds": []
+            "sounds": [
+                {
+                    "file": "/assets/comics/chapter-1/sounds/birds.mp3",
+                    "volume": 50,
+                    "delay": 0,
+                    "duration": 0,
+                    "repeat": true,
+                    "useFadeIn": false,
+                    "useFadeOut": false
+                }
+            ]
         },
         {
             "number": 13,
@@ -272,6 +301,15 @@
                     "repeat": false,
                     "useFadeIn": false,
                     "useFadeOut": false
+                },
+                {
+                    "file": "/assets/comics/chapter-1/sounds/birds.mp3",
+                    "volume": 50,
+                    "delay": 0,
+                    "duration": 0,
+                    "repeat": true,
+                    "useFadeIn": false,
+                    "useFadeOut": false
                 }
             ]
         },
@@ -282,11 +320,11 @@
             },
             "sounds": [
                 {
-                    "file": "/assets/comics/chapter-1/sounds/fail.mp3",
+                    "file": "/assets/comics/chapter-1/sounds/birds.mp3",
                     "volume": 50,
-                    "delay": 2,
+                    "delay": 0,
                     "duration": 0,
-                    "repeat": false,
+                    "repeat": true,
                     "useFadeIn": false,
                     "useFadeOut": false
                 }
